@@ -8,27 +8,32 @@
 body {
     font-family: Arial;
     margin: 0;
-    background: #f0f0f0;
+    background: #f3f3f3;
 }
 
 header {
     background: #222;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
 .container {
     width: 70%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .post {
     background: white;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px gray;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.post:hover {
+    transform: scale(1.02);
 }
 
 .post h2 {
@@ -37,12 +42,16 @@ header {
 
 .post a {
     text-decoration: none;
-    color: #333;
+    color: #222;
+}
+
+.post p {
+    color: #555;
 }
 
 .footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: gray;
 }
 </style>
@@ -51,20 +60,30 @@ header {
 <body>
 
 <header>
-    <h1>Shon 的個人網站</h1>
-    <p>資工系 / YOLO / 程式學習</p>
+    <h1>Shon 的學習部落格</h1>
+    <p>紀錄我的學習與資源整理</p>
 </header>
 
 <div class="container">
 
     <div class="post">
-        <h2><a href="#">HW1：網站建立</a></h2>
-        <p>這是我的第一個作業，學習如何建立 GitHub Pages。</p>
+        <h2><a href="https://flipclass.stust.edu.tw/" target="_blank">📚 南台 FlipClass</a></h2>
+        <p>學校課程平台，查看作業與上課資料。</p>
     </div>
 
     <div class="post">
-        <h2><a href="#">YOLO 專題</a></h2>
-        <p>使用 YOLO 進行物件偵測的專題介紹。</p>
+        <h2><a href="https://www.youtube.com/@%E9%99%B3%E6%AD%A3%E6%81%A9-n3e/videos" target="_blank">🎥 學習用 YouTube 頻道</a></h2>
+        <p>整理課程影片與學習資源。</p>
+    </div>
+
+    <div class="post">
+        <h2><a href="https://github.com/shon0057" target="_blank">💻 我的 GitHub</a></h2>
+        <p>程式專案與作業程式碼。</p>
+    </div>
+
+    <div class="post">
+        <h2><a href="#">📝 未來文章（預留）</a></h2>
+        <p>之後可以放作業、筆記、專題。</p>
     </div>
 
 </div>
